@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Podfile"
+      assignedFileDataType = "public.ruby-script">
+   </FileRef>
+   <Group
+      location = "container:Embedded"
+      name = "Embedded">
+      <FileRef
+         location = "group:MobileSDK.xcframework">
+      </FileRef>
+      <FileRef
+         location = "group:OMSDK_Exco.xcframework">
+      </FileRef>
+      <FileRef
+         location = "group:OMSDK-Static_Exco.xcframework">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:DemoApp/DemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

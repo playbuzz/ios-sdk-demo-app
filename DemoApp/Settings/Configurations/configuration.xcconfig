@@ -1,0 +1,16 @@
+//
+//  configuration.xcconfig
+//  DemoApp
+//
+//  Created by Arkadi Yoskovitz on 11/27/20.
+//  Copyright © 2022 ExCo. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// =====================================================================================================================
+
+// General content
+// =====================================================================================================================
+IPHONEOS_DEPLOYMENT_TARGET      = 13.0;
+ENABLE_USER_SCRIPT_SANDBOXING   = NO;
