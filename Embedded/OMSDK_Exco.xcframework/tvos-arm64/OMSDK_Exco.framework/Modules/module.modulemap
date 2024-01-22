@@ -1,0 +1,4 @@
+module OMSDK_Exco {
+    header "Headers/OMIDImports.h"
+    export *
+}
