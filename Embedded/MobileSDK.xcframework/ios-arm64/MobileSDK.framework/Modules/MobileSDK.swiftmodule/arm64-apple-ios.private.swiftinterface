@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name MobileSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MobileSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Dispatch
@@ -25,9 +25,10 @@ import os
   @objc var applicationCategories: Swift.String? { get }
   @objc var applicationAppstoreId: Swift.String? { get }
   @objc var applicationAppstoreUrl: Swift.String? { get }
-  @objc var deviceIdentifer: Swift.String? { get }
+  @objc var deviceIdentifier: Swift.String? { get }
   @objc var deviceIFA: Swift.String? { get }
   @objc var isWebInspectable: Swift.Bool { get }
+  @objc var miniPlayer: Swift.String { get }
 }
 @_hasMissingDesignatedInitializers @objc(ExcoPlayerConfigurationBuilder) final public class ExcoPlayerConfigurationBuilder : ObjectiveC.NSObject {
   final public let playerID: Swift.String
@@ -49,13 +50,16 @@ import os
   final public var appstoreUrl: Swift.String? {
     get
   }
-  final public var deviceIdentifer: Swift.String? {
+  final public var deviceIdentifier: Swift.String? {
     get
   }
   final public var deviceIFA: Swift.String? {
     get
   }
   final public var isWebInspectable: Swift.Bool {
+    get
+  }
+  final public var miniPlayer: Swift.String {
     get
   }
   @objc deinit
@@ -76,11 +80,13 @@ extension MobileSDK.ExcoPlayerConfigurationBuilder {
   @discardableResult
   final public func set(appstoreURL appstoreUrl: Swift.String?) -> Self
   @discardableResult
-  final public func set(deviceIdentifer deviceId: Swift.String?) -> Self
+  final public func set(deviceIdentifier deviceId: Swift.String?) -> Self
   @discardableResult
   final public func set(deviceIFA ifa: Swift.String?) -> Self
   @discardableResult
   final public func set(webInspectable inspectable: Swift.Bool) -> Self
+  @discardableResult
+  final public func set(miniPlayer: Swift.String) -> Self
 }
 extension MobileSDK.ExcoPlayerConfigurationBuilder {
   @discardableResult
@@ -98,32 +104,32 @@ extension MobileSDK.ExcoPlayerConfigurationBuilder {
   @objc public var applicationCategories: Swift.String?
   @objc public var applicationAppstoreId: Swift.String?
   @objc public var applicationAppstoreUrl: Swift.String?
-  @objc public var deviceIdentifer: Swift.String?
+  @objc public var deviceIdentifier: Swift.String?
   @objc public var deviceIFA: Swift.String?
   @objc public var isWebInspectable: Swift.Bool
-  @objc deinit
+  @objc public var miniPlayer: Swift.String
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc override dynamic public var debugDescription: Swift.String {
     @objc get
   }
+  @objc deinit
 }
 public struct ExcoView {
   @objc @_hasMissingDesignatedInitializers public class ExcoViewCoordinator : ObjectiveC.NSObject {
     @objc deinit
   }
-  public var configurationBuilder: MobileSDK.ExcoPlayerConfigurationBuilder
-  public init(configurationBuilder: MobileSDK.ExcoPlayerConfigurationBuilder)
+  public init()
+  public func makeCoordinator() -> MobileSDK.ExcoView.ExcoViewCoordinator
+  public func applyConfiguration(configuration: MobileSDK.ExcoPlayerConfiguration, storeInCache: Swift.Bool)
 }
 extension MobileSDK.ExcoView : SwiftUI.UIViewRepresentable {
-  public typealias UIViewType = MobileSDK.ExcoPlayerView
-  public typealias Coordinator = MobileSDK.ExcoView.ExcoViewCoordinator
-  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> MobileSDK.ExcoView.Coordinator
-  @_Concurrency.MainActor(unsafe) public func makeUIView(context: MobileSDK.ExcoView.Context) -> MobileSDK.ExcoPlayerView
   @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: MobileSDK.ExcoPlayerView, context: MobileSDK.ExcoView.Context)
-  @_Concurrency.MainActor(unsafe) public static func dismantleUIView(_ uiView: MobileSDK.ExcoPlayerView, coordinator: MobileSDK.ExcoView.ExcoViewCoordinator)
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: MobileSDK.ExcoView.Context) -> MobileSDK.ExcoPlayerView
   public typealias Body = Swift.Never
+  public typealias Coordinator = MobileSDK.ExcoView.ExcoViewCoordinator
+  public typealias UIViewType = MobileSDK.ExcoPlayerView
 }
 extension MobileSDK.ExcoView.ExcoViewCoordinator : MobileSDK.ExcoPlayerViewDelegate {
 }
@@ -133,26 +139,73 @@ extension MobileSDK.ExcoView.ExcoViewCoordinator : MobileSDK.ExcoPlayerViewDeleg
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(MiniPlayerConstants) public class MiniPlayerConstants : ObjectiveC.NSObject {
+  @objc public static var none: Swift.String {
+    @objc get
+  }
+  @objc public static var topLeft: Swift.String {
+    @objc get
+  }
+  @objc public static var topRight: Swift.String {
+    @objc get
+  }
+  @objc public static var bottomLeft: Swift.String {
+    @objc get
+  }
+  @objc public static var bottomRight: Swift.String {
+    @objc get
+  }
+  @objc public static var topBanner: Swift.String {
+    @objc get
+  }
+  @objc public static var bottomBanner: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+public enum MiniPlayerType {
+  case none
+  case cornered(in: UIKit.UIRectCorner)
+  case banner(position: MobileSDK.BannerPosition)
+  public init(stringValue: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public enum BannerPosition : Swift.String, Swift.CaseIterable {
+  case top
+  case bottom
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [MobileSDK.BannerPosition]
+  public typealias RawValue = Swift.String
+  public static var allCases: [MobileSDK.BannerPosition] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc(ExcoPlayerViewDelegate) public protocol ExcoPlayerViewDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didFinishLoading playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didFailLoading playerID: Swift.String, with error: any Swift.Error)
-  @objc optional func didFinishLoadingContent(to playerView: MobileSDK.ExcoPlayerView)
-  @objc optional func didStartPlayback(in playerView: MobileSDK.ExcoPlayerView)
-  @objc optional func didPausePlayback(in playerView: MobileSDK.ExcoPlayerView)
-  @objc optional func didClosePlayback(in playerView: MobileSDK.ExcoPlayerView)
-  @objc optional func didMutePlayback(in playerView: MobileSDK.ExcoPlayerView)
-  @objc optional func didUnmutePlayback(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidInit(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidLoad(to playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidStartPlaying(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidPause(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidClose(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidMute(in playerView: MobileSDK.ExcoPlayerView)
+  @objc optional func playerDidUnmute(in playerView: MobileSDK.ExcoPlayerView)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, wasClosed playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didEnterFullscreen playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didExitFullscreen playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didClickCTAButton playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, playerDidEnterFullscreen playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, playerDidExitFullscreen playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didClickCTA playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didInitiateAd playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didStartAdPlayback playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didStartAd playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didImpressAd playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didReachFirstQuartile playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didReachSecondQuartile playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didReachMidpoint playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didReachThirdQuartile playerID: Swift.String)
-  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didCompleteAdPlayback playerID: Swift.String)
+  @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didCompleteAd playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didSkipAd playerID: Swift.String)
   @objc optional func playerView(_ playerView: MobileSDK.ExcoPlayerView, didClickAd playerID: Swift.String)
 }
@@ -182,6 +235,7 @@ extension MobileSDK.ExcoView.ExcoViewCoordinator : MobileSDK.ExcoPlayerViewDeleg
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
   @objc @_Concurrency.MainActor(unsafe) public func apply(player configuration: MobileSDK.ExcoPlayerConfiguration, shouldStore inCache: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
   @objc @_Concurrency.MainActor(unsafe) public func test_creativeURL() -> Foundation.URL?
 }
 @objc(ExcoMobileSDKDelegate) public protocol ExcoMobileSDKDelegate : ObjectiveC.NSObjectProtocol {
@@ -205,3 +259,6 @@ extension MobileSDK.ExcoView.ExcoViewCoordinator : MobileSDK.ExcoPlayerViewDeleg
   @objc override dynamic public init()
   @objc deinit
 }
+extension MobileSDK.BannerPosition : Swift.Equatable {}
+extension MobileSDK.BannerPosition : Swift.Hashable {}
+extension MobileSDK.BannerPosition : Swift.RawRepresentable {}

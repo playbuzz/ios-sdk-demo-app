@@ -50,7 +50,7 @@ final class ManualSettingsViewController : UIViewController
             .set(applicationCategories: appCategoryTextField.text)
             .set(appstoreId: appStoreIDTextField.text)
             .set(appstoreURL: appStoreURLTextField.text)
-            .set(deviceIdentifer: deviceIDTextField.text)
+            .set(deviceIdentifier: deviceIDTextField.text)
             .set(deviceIFA: ifaTextField.text)
         
         target.configuration = builder.build()
