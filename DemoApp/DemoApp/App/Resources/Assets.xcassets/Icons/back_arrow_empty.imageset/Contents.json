@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "arrow_back.pdf",
       "idiom" : "universal"
     }
   ],
