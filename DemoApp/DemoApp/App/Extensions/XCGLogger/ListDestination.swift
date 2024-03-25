@@ -7,21 +7,17 @@
 import Foundation
 import XCGLogger
 
-protocol ListDestinationDelegate : AnyObject
-{
-    func didRecive(_ message: String)
+protocol ListDestinationDelegate: AnyObject {
+    func didReceive(_ message: String)
 }
-///
-///
-///
-class ListDestination : BaseQueuedDestination {
+
+class ListDestination: BaseQueuedDestination {
     
-    weak var delegate : ListDestinationDelegate?
+    weak var delegate: ListDestinationDelegate?
     
     open override func write(message: String) {
-        
-        let outputClosure : () -> Void = { [weak self] in
-            self?.delegate?.didRecive(message)
+        let outputClosure: () -> Void = { [weak self] in
+            self?.delegate?.didReceive(message)
         }
         
         if let logQueue {

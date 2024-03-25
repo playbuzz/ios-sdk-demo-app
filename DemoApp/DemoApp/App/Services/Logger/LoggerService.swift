@@ -8,7 +8,7 @@
 
 import XCGLogger
 
-let logger : XCGLogger = {
+let logger: XCGLogger = {
     
     let logger = XCGLogger(identifier: "com.exco.mobile.app", includeDefaultDestinations: false)
     // logger.add(destination: LoggerNamespace.consoleDestination)
@@ -18,59 +18,57 @@ let logger : XCGLogger = {
     return logger
 }()
 
-struct LoggerDestinations
-{
+struct LoggerDestinations {
     private init() {}
     
     // MARK: - XCGLogger Destinations
     static var consoleDestination: BaseQueuedDestination {
-        
         let identifier  = "com.exco.mobile.app.console"
         let destination = ConsoleDestination(identifier: identifier)
-        destination.outputLevel          = .debug
-        destination.showLogIdentifier    = false
-        destination.showFunctionName     = false
-        destination.showThreadName       = false
-        destination.showLevel            = false
-        destination.showFileName         = false
-        destination.showLineNumber       = false
-        destination.showDate             = false
-        destination.logQueue             = DispatchQueue(label: "\(identifier).queue", qos: .`default`)
+        destination.outputLevel = .debug
+        destination.showLogIdentifier = false
+        destination.showFunctionName = false
+        destination.showThreadName = false
+        destination.showLevel = false
+        destination.showFileName = false
+        destination.showLineNumber = false
+        destination.showDate = false
+        destination.logQueue = DispatchQueue(label: "\(identifier).queue", qos: .`default`)
         return destination
     }
     
-    static var crashlyticsDestination : BaseQueuedDestination {
-        let identifier  = "com.exco.mobile.app.crashlytics"
+    static var crashlyticsDestination: BaseQueuedDestination {
+        let identifier = "com.exco.mobile.app.crashlytics"
         let destination = CrashlyticsDestination(identifier: identifier)
-        destination.outputLevel         = .debug
-        destination.showLogIdentifier   = false
-        destination.showFunctionName    = true
-        destination.showThreadName      = false
-        destination.showLevel           = true
-        destination.showFileName        = true
-        destination.showLineNumber      = true
-        destination.showDate            = true
-        destination.logQueue            = DispatchQueue(label: "\(identifier).queue", qos: .`default`)
+        destination.outputLevel = .debug
+        destination.showLogIdentifier = false
+        destination.showFunctionName = true
+        destination.showThreadName = false
+        destination.showLevel = true
+        destination.showFileName = true
+        destination.showLineNumber = true
+        destination.showDate = true
+        destination.logQueue = DispatchQueue(label: "\(identifier).queue", qos: .`default`)
         return destination
     }
     
-    static var tableViewDestination : ListDestination {
+    static var tableViewDestination: ListDestination {
         let identifier = "com.exco.mobile.app.list"
         return logger.destination(withIdentifier: identifier) as? ListDestination ?? _tableViewDestination
     }
     
-    static var _tableViewDestination : ListDestination {
+    static var _tableViewDestination: ListDestination {
         let identifier = "com.exco.mobile.app.list"
         let destination = ListDestination(identifier: identifier)
-        destination.outputLevel          = .info
-        destination.showLogIdentifier    = false
-        destination.showFunctionName     = true
-        destination.showThreadName       = false
-        destination.showLevel            = true
-        destination.showFileName         = false
-        destination.showLineNumber       = false
-        destination.showDate             = true
-        destination.logQueue             = DispatchQueue(label: "\(identifier).queue", qos: .userInitiated)
+        destination.outputLevel = .info
+        destination.showLogIdentifier = false
+        destination.showFunctionName = true
+        destination.showThreadName = false
+        destination.showLevel = true
+        destination.showFileName = false
+        destination.showLineNumber = false
+        destination.showDate = true
+        destination.logQueue = DispatchQueue(label: "\(identifier).queue", qos: .userInitiated)
         return destination
     }
 }

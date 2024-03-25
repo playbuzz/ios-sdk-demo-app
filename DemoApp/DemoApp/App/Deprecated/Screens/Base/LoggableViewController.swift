@@ -53,7 +53,7 @@ class LoggableViewController : UIViewController
 }
 extension LoggableViewController : ListDestinationDelegate
 {
-    func didRecive(_ message: String) {
+    func didReceive(_ message: String) {
         
         DispatchQueue.main.async {
             
