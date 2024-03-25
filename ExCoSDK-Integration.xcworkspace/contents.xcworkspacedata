@@ -5,19 +5,6 @@
       location = "group:Podfile"
       assignedFileDataType = "public.ruby-script">
    </FileRef>
-   <Group
-      location = "container:Embedded"
-      name = "Embedded">
-      <FileRef
-         location = "group:MobileSDK.xcframework">
-      </FileRef>
-      <FileRef
-         location = "group:OMSDK_Exco.xcframework">
-      </FileRef>
-      <FileRef
-         location = "group:OMSDK-Static_Exco.xcframework">
-      </FileRef>
-   </Group>
    <FileRef
       location = "group:DemoApp/DemoApp.xcodeproj">
    </FileRef>
