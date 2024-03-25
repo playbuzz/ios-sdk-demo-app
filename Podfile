@@ -8,6 +8,7 @@ workspace 'ExCoSDK-Integration.xcworkspace'
 project 'DemoApp/DemoApp.xcodeproj'
 
 platform :ios, '13.0'
+source 'https://exco1.jfrog.io/artifactory/api/pods/ios-releases-cocoapods-local'
 
 target 'DemoApp' do
   project 'DemoApp/DemoApp.xcodeproj'
@@ -17,15 +18,17 @@ target 'DemoApp' do
   
   # Pods for HostApp
   pod 'XCGLogger'
+  pod 'ExcoMobileSDK'
+  pod 'OMSDK_Exco', '~> 1.4.8'
   
-  target 'DemoAppTests' do
-    inherit! :search_paths
+#  target 'DemoAppTests' do
+#    inherit! :search_paths
     # Pods for testing
-  end
+#  end
   
-  target 'DemoAppUITests' do
+#  target 'DemoAppUITests' do
     # Pods for testing
-  end
+#  end
   
 end
 

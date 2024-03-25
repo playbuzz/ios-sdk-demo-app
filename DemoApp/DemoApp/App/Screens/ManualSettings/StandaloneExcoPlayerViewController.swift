@@ -31,7 +31,7 @@ class StandaloneExcoPlayerViewController : LoggableViewController {
         super.viewDidLoad()
         logger.debug("")
         
-        excoPlayerView.apply(player: configuration, shouldStore: false)
+        try? excoPlayerView.apply(player: configuration, shouldStore: false)
                 
         setupUI()
         setupTableView()
