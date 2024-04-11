@@ -5,8 +5,10 @@ This guide will walk you through the steps required to get the demo app up and r
 
 ## Prerequisites
 
-- Xcode installed on your macOS machine (You can download it from the Mac App Store).
+- Xcode* 14.3+ installed on your macOS machine (You can download it from the Mac App Store).
 - CocoaPods installed. If you don't have CocoaPods installed, you can install it by running `sudo gem install cocoapods` in the Terminal.
+
+*You might encounter problems with Xcode 15.3 when using SPM. For that reason said version is not supported at the moment.
 
 ## Step 1: Clone the Repository
 
