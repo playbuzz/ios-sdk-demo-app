@@ -12,10 +12,10 @@ This guide will walk you through the steps required to get the demo app up and r
 
 ## Step 1: Clone the Repository
 
-First, you need to clone the demo app repository to your local machine. Open Terminal and run the following command, replacing `URL_OF_THE_REPO` with the actual URL of the repository:
+First, you need to clone the demo app repository to your local machine. Open Terminal and run the following command:
 
 ```bash
-git clone URL_OF_THE_REPO
+git clone https://github.com/playbuzz/ios-sdk-demo-app.git
 ```
 
 ## Step 2: Install Dependencies
