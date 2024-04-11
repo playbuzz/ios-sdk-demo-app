@@ -36,7 +36,7 @@ This command reads the `Podfile` in the project directory, installs the required
 
 ## Step 3: Open the Project in Xcode
 
-After installing the dependencies, open the `.xcworkspace` file that CocoaPods generated. This file will be in the root of your project directory. Double-click the file to open it in Xcode, or use the following command in Terminal:
+After installing the dependencies, open the newly created `.xcworkspace` file that CocoaPods generated. This file will be in the root of your project directory. Double-click the file to open it in Xcode, or use the following command in Terminal:
 
 ```bash
 open ExCoSDK-Integration.xcworkspace
