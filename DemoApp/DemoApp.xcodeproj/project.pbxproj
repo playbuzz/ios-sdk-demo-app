@@ -369,7 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				5D4960D12B167F0200D87E3E /* LaunchScreen.storyboard */,
-				AD04B9582BB15A81005B6E1F /* Deprecated */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -457,6 +456,7 @@
 		AD04B9472BB157D0005B6E1F /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
+				5D4960CF2B167F0200D87E3E /* Main.storyboard */,
 				5D4960C62B167E7400D87E3E /* Screens */,
 			);
 			path = Deprecated;
@@ -478,14 +478,6 @@
 				AD04B9552BB15A5A005B6E1F /* OptionListCellModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		AD04B9582BB15A81005B6E1F /* Deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				5D4960CF2B167F0200D87E3E /* Main.storyboard */,
-			);
-			path = Deprecated;
 			sourceTree = "<group>";
 		};
 		AD04B9592BB15B7D005B6E1F /* ATTService */ = {
