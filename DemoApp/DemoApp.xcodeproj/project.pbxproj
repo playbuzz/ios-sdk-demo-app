@@ -33,6 +33,21 @@
 		5D4960FC2B1680AE00D87E3E /* LoggableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960FB2B1680AE00D87E3E /* LoggableViewController.swift */; };
 		5D4961062B16834D00D87E3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4961052B16834D00D87E3E /* FirebaseAnalytics */; };
 		5D4961082B16834D00D87E3E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4961072B16834D00D87E3E /* FirebaseCrashlytics */; };
+		912823082C712E070056F645 /* ViewContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912823072C712E070056F645 /* ViewContainerType.swift */; };
+		9128230F2C7130710056F645 /* OptionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9128230B2C712ECD0056F645 /* OptionListViewController.xib */; };
+		912823102C7130730056F645 /* OptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128230A2C712ECD0056F645 /* OptionListViewController.swift */; };
+		912823152C7132740056F645 /* ContainerOptionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912823132C71308F0056F645 /* ContainerOptionListViewModel.swift */; };
+		912823162C7132760056F645 /* ContainerOptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912823122C71308F0056F645 /* ContainerOptionListViewController.swift */; };
+		913633842C92BD15008D3A11 /* PlayerStoryboardScreenTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9136337E2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.swift */; };
+		913633852C92BD1A008D3A11 /* PlayerStoryboardScreenTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136337D2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.xib */; };
+		913633862C92BD1D008D3A11 /* LoremTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913633822C92BCF6008D3A11 /* LoremTableViewCell.xib */; };
+		913633872C92BD1F008D3A11 /* LoremTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913633812C92BCF6008D3A11 /* LoremTableViewCell.swift */; };
+		913633882C92BD24008D3A11 /* CellWithPlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 913633802C92BCF6008D3A11 /* CellWithPlayerTableViewCell.xib */; };
+		913633892C92BD26008D3A11 /* CellWithPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9136337F2C92BCF6008D3A11 /* CellWithPlayerTableViewCell.swift */; };
+		9136338B2C92BD93008D3A11 /* SharedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9136338A2C92BD93008D3A11 /* SharedTableViewController.swift */; };
+		91D52DF02C73D8A8008F87B9 /* PlayerUIKitTableViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D52DEF2C73D8A8008F87B9 /* PlayerUIKitTableViewScreen.swift */; };
+		91D52DF22C73D8DB008F87B9 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D52DF12C73D8DB008F87B9 /* CustomTableView.swift */; };
+		91D52DF42C73DA63008F87B9 /* PlayerSwiftUIListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D52DF32C73DA63008F87B9 /* PlayerSwiftUIListScreen.swift */; };
 		AD04B94A2BB1581E005B6E1F /* TypeNameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9492BB1581E005B6E1F /* TypeNameable.swift */; };
 		AD04B94C2BB15836005B6E1F /* ListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B94B2BB15836005B6E1F /* ListViewModelProtocol.swift */; };
 		AD04B9502BB1599A005B6E1F /* ExtensionsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B94D2BB1599A005B6E1F /* ExtensionsUIViewController.swift */; };
@@ -55,8 +70,6 @@
 		AD04B9A12BB15C64005B6E1F /* PlayerSwiftUIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B97C2BB15C64005B6E1F /* PlayerSwiftUIScreen.swift */; };
 		AD04B9A22BB15C64005B6E1F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B97E2BB15C64005B6E1F /* CustomTextView.swift */; };
 		AD04B9A32BB15C64005B6E1F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9812BB15C64005B6E1F /* ListViewController.swift */; };
-		AD04B9A42BB15C64005B6E1F /* OptionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD04B9832BB15C64005B6E1F /* OptionListViewController.xib */; };
-		AD04B9A52BB15C64005B6E1F /* OptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9842BB15C64005B6E1F /* OptionListViewController.swift */; };
 		AD04B9A62BB15C64005B6E1F /* ConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9862BB15C64005B6E1F /* ConfigurationType.swift */; };
 		AD04B9A72BB15C64005B6E1F /* WelcomeOptionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9872BB15C64005B6E1F /* WelcomeOptionListViewModel.swift */; };
 		AD04B9A82BB15C64005B6E1F /* WelcomeOptionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9882BB15C64005B6E1F /* WelcomeOptionListViewController.swift */; };
@@ -129,6 +142,21 @@
 		5D4960FD2B16824300D87E3E /* OMSDK_Exco.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OMSDK_Exco.xcframework; path = ../Embedded/OMSDK_Exco.xcframework; sourceTree = "<group>"; };
 		5D4961012B1682AC00D87E3E /* MobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileSDK.xcframework; path = ../Embedded/MobileSDK.xcframework; sourceTree = "<group>"; };
 		7E8703E57CA81CE5B63D6960 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		912823072C712E070056F645 /* ViewContainerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainerType.swift; sourceTree = "<group>"; };
+		9128230A2C712ECD0056F645 /* OptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionListViewController.swift; sourceTree = "<group>"; };
+		9128230B2C712ECD0056F645 /* OptionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionListViewController.xib; sourceTree = "<group>"; };
+		912823122C71308F0056F645 /* ContainerOptionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionListViewController.swift; sourceTree = "<group>"; };
+		912823132C71308F0056F645 /* ContainerOptionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOptionListViewModel.swift; sourceTree = "<group>"; };
+		9136337D2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerStoryboardScreenTableView.xib; sourceTree = "<group>"; };
+		9136337E2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStoryboardScreenTableView.swift; sourceTree = "<group>"; };
+		9136337F2C92BCF6008D3A11 /* CellWithPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		913633802C92BCF6008D3A11 /* CellWithPlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellWithPlayerTableViewCell.xib; sourceTree = "<group>"; };
+		913633812C92BCF6008D3A11 /* LoremTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremTableViewCell.swift; sourceTree = "<group>"; };
+		913633822C92BCF6008D3A11 /* LoremTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoremTableViewCell.xib; sourceTree = "<group>"; };
+		9136338A2C92BD93008D3A11 /* SharedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewController.swift; sourceTree = "<group>"; };
+		91D52DEF2C73D8A8008F87B9 /* PlayerUIKitTableViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUIKitTableViewScreen.swift; sourceTree = "<group>"; };
+		91D52DF12C73D8DB008F87B9 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		91D52DF32C73DA63008F87B9 /* PlayerSwiftUIListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSwiftUIListScreen.swift; sourceTree = "<group>"; };
 		AD04B9492BB1581E005B6E1F /* TypeNameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeNameable.swift; sourceTree = "<group>"; };
 		AD04B94B2BB15836005B6E1F /* ListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelProtocol.swift; sourceTree = "<group>"; };
 		AD04B94D2BB1599A005B6E1F /* ExtensionsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsUIViewController.swift; sourceTree = "<group>"; };
@@ -151,8 +179,6 @@
 		AD04B97C2BB15C64005B6E1F /* PlayerSwiftUIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSwiftUIScreen.swift; sourceTree = "<group>"; };
 		AD04B97E2BB15C64005B6E1F /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		AD04B9812BB15C64005B6E1F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		AD04B9832BB15C64005B6E1F /* OptionListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionListViewController.xib; sourceTree = "<group>"; };
-		AD04B9842BB15C64005B6E1F /* OptionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionListViewController.swift; sourceTree = "<group>"; };
 		AD04B9862BB15C64005B6E1F /* ConfigurationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationType.swift; sourceTree = "<group>"; };
 		AD04B9872BB15C64005B6E1F /* WelcomeOptionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeOptionListViewModel.swift; sourceTree = "<group>"; };
 		AD04B9882BB15C64005B6E1F /* WelcomeOptionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeOptionListViewController.swift; sourceTree = "<group>"; };
@@ -453,6 +479,45 @@
 			path = LogTableCell;
 			sourceTree = "<group>";
 		};
+		912823092C712EC30056F645 /* ContainerListView */ = {
+			isa = PBXGroup;
+			children = (
+				912823132C71308F0056F645 /* ContainerOptionListViewModel.swift */,
+				912823122C71308F0056F645 /* ContainerOptionListViewController.swift */,
+			);
+			path = ContainerListView;
+			sourceTree = "<group>";
+		};
+		913633832C92BCF6008D3A11 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9136337F2C92BCF6008D3A11 /* CellWithPlayerTableViewCell.swift */,
+				913633802C92BCF6008D3A11 /* CellWithPlayerTableViewCell.xib */,
+				913633812C92BCF6008D3A11 /* LoremTableViewCell.swift */,
+				913633822C92BCF6008D3A11 /* LoremTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		913DF9832C6E6F79004D0200 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AD04B9752BB15C64005B6E1F /* PlayerStoryboardScreen.swift */,
+				AD04B9762BB15C64005B6E1F /* PlayerStoryboardScreen.xib */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		913DF9842C6E6F80004D0200 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				913633832C92BCF6008D3A11 /* Cells */,
+				9136337E2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.swift */,
+				9136337D2C92BCF6008D3A11 /* PlayerStoryboardScreenTableView.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		AD04B9472BB157D0005B6E1F /* Deprecated */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +621,7 @@
 			isa = PBXGroup;
 			children = (
 				AD04B9722BB15C64005B6E1F /* PlayerScreenViewModel.swift */,
+				9136338A2C92BD93008D3A11 /* SharedTableViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -573,8 +639,8 @@
 		AD04B9742BB15C64005B6E1F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				AD04B9752BB15C64005B6E1F /* PlayerStoryboardScreen.swift */,
-				AD04B9762BB15C64005B6E1F /* PlayerStoryboardScreen.xib */,
+				913DF9842C6E6F80004D0200 /* TableView */,
+				913DF9832C6E6F79004D0200 /* ScrollView */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -583,6 +649,7 @@
 			isa = PBXGroup;
 			children = (
 				AD04B9782BB15C64005B6E1F /* PlayerUIKitScreen.swift */,
+				91D52DEF2C73D8A8008F87B9 /* PlayerUIKitTableViewScreen.swift */,
 				AD04B9792BB15C64005B6E1F /* Views */,
 			);
 			path = "Programmatic UIKit";
@@ -591,6 +658,7 @@
 		AD04B9792BB15C64005B6E1F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				91D52DF12C73D8DB008F87B9 /* CustomTableView.swift */,
 				AD04B97A2BB15C64005B6E1F /* CustomScrollView.swift */,
 			);
 			path = Views;
@@ -600,6 +668,7 @@
 			isa = PBXGroup;
 			children = (
 				AD04B97C2BB15C64005B6E1F /* PlayerSwiftUIScreen.swift */,
+				91D52DF32C73DA63008F87B9 /* PlayerSwiftUIListScreen.swift */,
 				AD04B97D2BB15C64005B6E1F /* Views */,
 			);
 			path = SwiftUI;
@@ -625,8 +694,9 @@
 		AD04B9822BB15C64005B6E1F /* OptionListScreen */ = {
 			isa = PBXGroup;
 			children = (
-				AD04B9832BB15C64005B6E1F /* OptionListViewController.xib */,
-				AD04B9842BB15C64005B6E1F /* OptionListViewController.swift */,
+				9128230B2C712ECD0056F645 /* OptionListViewController.xib */,
+				9128230A2C712ECD0056F645 /* OptionListViewController.swift */,
+				912823092C712EC30056F645 /* ContainerListView */,
 				AD04B9852BB15C64005B6E1F /* Welcome */,
 			);
 			path = OptionListScreen;
@@ -666,6 +736,7 @@
 			isa = PBXGroup;
 			children = (
 				AD04B98D2BB15C64005B6E1F /* ViewCreationType.swift */,
+				912823072C712E070056F645 /* ViewContainerType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -817,17 +888,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D4960EC2B16800000D87E3E /* GoogleService-Info.plist in Resources */,
-				AD04B9A42BB15C64005B6E1F /* OptionListViewController.xib in Resources */,
 				5D4960BA2B167A8900D87E3E /* configuration.xcconfig in Resources */,
+				913633882C92BD24008D3A11 /* CellWithPlayerTableViewCell.xib in Resources */,
 				ADE045612BB40077005819B0 /* PrivacyInfo.xcprivacy in Resources */,
 				5D4960F92B1680A900D87E3E /* LogTableCell.xib in Resources */,
 				5D4960BB2B167A8900D87E3E /* configurationUnitTests.xcconfig in Resources */,
+				913633852C92BD1A008D3A11 /* PlayerStoryboardScreenTableView.xib in Resources */,
+				913633862C92BD1D008D3A11 /* LoremTableViewCell.xib in Resources */,
 				AD04B9B62BB15C64005B6E1F /* FormFieldView.xib in Resources */,
 				AD04B9B32BB15C64005B6E1F /* ConfigurationFormViewController.xib in Resources */,
 				5D4960D32B167F0200D87E3E /* Main.storyboard in Resources */,
 				5D4960D42B167F0200D87E3E /* LaunchScreen.storyboard in Resources */,
 				AD04B96A2BB15C34005B6E1F /* OptionListTableCell.xib in Resources */,
 				AD04B96B2BB15C34005B6E1F /* SimpleTitleTableCell.xib in Resources */,
+				9128230F2C7130710056F645 /* OptionListViewController.xib in Resources */,
 				5D4960B92B167A8900D87E3E /* configurationHostApp.xcconfig in Resources */,
 				5D4960CB2B167ED900D87E3E /* Assets.xcassets in Resources */,
 				AD04B99E2BB15C64005B6E1F /* PlayerStoryboardScreen.xib in Resources */,
@@ -920,14 +994,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD04B9A82BB15C64005B6E1F /* WelcomeOptionListViewController.swift in Sources */,
+				913633872C92BD1F008D3A11 /* LoremTableViewCell.swift in Sources */,
 				AD04B9502BB1599A005B6E1F /* ExtensionsUIViewController.swift in Sources */,
 				5D4960F52B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift in Sources */,
 				AD04B9522BB1599A005B6E1F /* ExtensionUIRectCorner.swift in Sources */,
 				AD04B96D2BB15C34005B6E1F /* XibView.swift in Sources */,
 				AD04B95E2BB15BCF005B6E1F /* PlayerScreenFactory.swift in Sources */,
+				91D52DF42C73DA63008F87B9 /* PlayerSwiftUIListScreen.swift in Sources */,
 				AD04B9AE2BB15C64005B6E1F /* ShadowView.swift in Sources */,
 				5D4960E32B167F9600D87E3E /* ListDestination.swift in Sources */,
 				5D4960F12B16808500D87E3E /* UseCaseSelectionViewController.swift in Sources */,
+				912823162C7132760056F645 /* ContainerOptionListViewController.swift in Sources */,
 				AD04B99C2BB15C64005B6E1F /* PlayerScreenViewModel.swift in Sources */,
 				5D4960D72B167F3100D87E3E /* AppDelegate.swift in Sources */,
 				AD04B99F2BB15C64005B6E1F /* PlayerUIKitScreen.swift in Sources */,
@@ -936,9 +1013,14 @@
 				5D4960F42B16808D00D87E3E /* ManualSettingsViewController.swift in Sources */,
 				AD04B9AD2BB15C64005B6E1F /* DisclosureImageView.swift in Sources */,
 				AD04B96C2BB15C34005B6E1F /* SimpleTitleTableCell.swift in Sources */,
+				912823082C712E070056F645 /* ViewContainerType.swift in Sources */,
+				912823102C7130730056F645 /* OptionListViewController.swift in Sources */,
+				91D52DF02C73D8A8008F87B9 /* PlayerUIKitTableViewScreen.swift in Sources */,
 				AD04B9A02BB15C64005B6E1F /* CustomScrollView.swift in Sources */,
+				913633842C92BD15008D3A11 /* PlayerStoryboardScreenTableView.swift in Sources */,
 				AD04B9A32BB15C64005B6E1F /* ListViewController.swift in Sources */,
 				AD04B9512BB1599A005B6E1F /* UIView+Constraints.swift in Sources */,
+				912823152C7132740056F645 /* ContainerOptionListViewModel.swift in Sources */,
 				5D4960E92B167FEC00D87E3E /* CrashReporterService.swift in Sources */,
 				5D4960C22B167E3900D87E3E /* CrashlyticsLogDestination.swift in Sources */,
 				5D4960D82B167F3100D87E3E /* SceneDelegate.swift in Sources */,
@@ -956,17 +1038,19 @@
 				AD04B9A22BB15C64005B6E1F /* CustomTextView.swift in Sources */,
 				AD04B9562BB15A5A005B6E1F /* ExcoConfigurationModel.swift in Sources */,
 				5D4960E12B167F8E00D87E3E /* ExtensionsUIView.swift in Sources */,
+				91D52DF22C73D8DB008F87B9 /* CustomTableView.swift in Sources */,
 				AD04B9A72BB15C64005B6E1F /* WelcomeOptionListViewModel.swift in Sources */,
+				913633892C92BD26008D3A11 /* CellWithPlayerTableViewCell.swift in Sources */,
 				AD04B9AA2BB15C64005B6E1F /* ViewCreationType.swift in Sources */,
 				AD04B9B02BB15C64005B6E1F /* CustomLabel.swift in Sources */,
 				AD04B94C2BB15836005B6E1F /* ListViewModelProtocol.swift in Sources */,
+				9136338B2C92BD93008D3A11 /* SharedTableViewController.swift in Sources */,
 				5D4960DF2B167F8800D87E3E /* ExtensionsBundle.swift in Sources */,
 				AD04B99D2BB15C64005B6E1F /* PlayerStoryboardScreen.swift in Sources */,
 				5D4960FC2B1680AE00D87E3E /* LoggableViewController.swift in Sources */,
 				5D4960E72B167FE100D87E3E /* LoggerService.swift in Sources */,
 				AD04B95C2BB15BC3005B6E1F /* HostAppAttServiceProvider.swift in Sources */,
 				AD04B9B92BB15DC3005B6E1F /* Constants.swift in Sources */,
-				AD04B9A52BB15C64005B6E1F /* OptionListViewController.swift in Sources */,
 				5D4960FA2B1680A900D87E3E /* LogTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
