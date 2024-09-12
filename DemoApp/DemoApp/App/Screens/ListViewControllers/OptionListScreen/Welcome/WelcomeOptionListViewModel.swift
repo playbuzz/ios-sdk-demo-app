@@ -26,10 +26,12 @@ class WelcomeOptionListViewModel: ListViewModelProtocol {
     }
     
     private let selectedCreationType: ViewCreationType
+    private let selectedContainerType: ViewContainerType
     
     // MARK: Init
-    init(selectedCreationType: ViewCreationType) {
+    init(selectedCreationType: ViewCreationType, selectedContainerType: ViewContainerType) {
         self.selectedCreationType = selectedCreationType
+        self.selectedContainerType = selectedContainerType
     }
     
     func handleViewDidAppear() {
@@ -57,12 +59,14 @@ private extension WelcomeOptionListViewModel {
     }
     
     func createPredefinedPlayerScreen() -> UIViewController {
-        let playerScreenFactory = PlayerScreenFactory(viewCreationType: selectedCreationType, configuration: getPredefinedConfiguration())
+        let playerScreenFactory = PlayerScreenFactory(viewCreationType: selectedCreationType, 
+                                                      containerType: selectedContainerType,
+                                                      configurations: [getPredefinedConfiguration()])
         return playerScreenFactory.createPlayerScreen()
     }
     
     func createConfigurationFormViewController() -> UIViewController {
-        let viewModel = ConfigurationFormViewModel(selectedCreationType: selectedCreationType)
+        let viewModel = ConfigurationFormViewModel(selectedCreationType: selectedCreationType, selectedContainerType: selectedContainerType)
         return ConfigurationFormViewController(viewModel: viewModel)
     }
     

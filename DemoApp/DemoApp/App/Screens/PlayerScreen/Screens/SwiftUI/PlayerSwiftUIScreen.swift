@@ -15,9 +15,11 @@ struct PlayerSwiftUIScreen: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView(showsIndicators: false) {
-                ExcoPlayerSUIView(configuration: viewModel.playerConfiguration, shouldStoreInCache: false)
-                    .aspectRatio(Constants.aspectRatio, contentMode: .fit)
-                    .padding(.bottom, Constants.mainStackSpacing)
+                ForEach(viewModel.playerConfigurations, id: \.playerID) { playerConfiguration in
+                    ExcoPlayerSUIView(configuration: playerConfiguration, shouldStoreInCache: false)
+                        .aspectRatio(Constants.aspectRatio, contentMode: .fit)
+                        .padding(.bottom, Constants.mainStackSpacing)
+                }
                 VStack(alignment: .leading) {
                     CustomTextView(text: viewModel.title,
                                    size: Constants.titleTextSize,
@@ -35,7 +37,7 @@ struct PlayerSwiftUIScreen: View {
 }
 
 // MARK: Constants
-private extension PlayerSwiftUIScreen {
+extension PlayerSwiftUIScreen {
     struct Constants {
         static let aspectRatio: CGFloat = 16.0 / 9.0
         static let sidePadding: CGFloat = 16.0
@@ -49,6 +51,6 @@ private extension PlayerSwiftUIScreen {
     let config = ExcoMobileSDK.builder(with: Constants.PlayerIdConstants.playerIdWithAds).build()
     return PlayerSwiftUIScreen(
         viewModel: PlayerScreenViewModel(
-            configuration: config)
+            configurations: [config])
     )
 }

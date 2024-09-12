@@ -9,18 +9,18 @@ import Foundation
 import MobileSDK
 
 protocol PlayerScreenViewModelProtocol: ObservableObject {
-    var playerConfiguration: ExcoPlayerConfiguration { get }
+    var playerConfigurations: [ExcoPlayerConfiguration] { get }
     var title: String { get }
     var subtitle: String { get }
 }
 
 final class PlayerScreenViewModel {
 
-    let playerConfiguration: ExcoPlayerConfiguration
+    let playerConfigurations: [ExcoPlayerConfiguration]
     
     // MARK: Init
-    init(configuration: ExcoPlayerConfiguration) {
-        self.playerConfiguration = configuration
+    init(configurations: [ExcoPlayerConfiguration]) {
+        self.playerConfigurations = configurations
     }
 }
 

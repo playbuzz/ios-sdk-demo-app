@@ -33,9 +33,11 @@ class ConfigurationFormViewModel {
     var initialPlayerID = Constants.PlayerIdConstants.playerIdWithAds
     
     private let selectedCreationType: ViewCreationType
+    private let selectedContainerType: ViewContainerType
     
-    init(selectedCreationType: ViewCreationType) {
+    init(selectedCreationType: ViewCreationType, selectedContainerType: ViewContainerType) {
         self.selectedCreationType = selectedCreationType
+        self.selectedContainerType = selectedContainerType
     }
     
     func userDidTapNext(configuration: ExcoConfigurationModel) {
@@ -52,7 +54,9 @@ class ConfigurationFormViewModel {
     
     private func navigateToPlayerScreen(with model: ExcoConfigurationModel) {
         let config = makeConfigurationObject(from: model)
-        let playerScreenFactory = PlayerScreenFactory(viewCreationType: selectedCreationType, configuration: config)
+        let playerScreenFactory = PlayerScreenFactory(viewCreationType: selectedCreationType, 
+                                                      containerType: selectedContainerType,
+                                                      configurations: [config])
         let playerScreen = playerScreenFactory.createPlayerScreen()
         navigationAction?(playerScreen)
     }

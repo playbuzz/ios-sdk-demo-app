@@ -45,8 +45,12 @@ final class PlayerUIKitScreen: UIViewController {
     }
     
     private func setupPlayer() {
+        guard let playerConfiguration = viewModel.playerConfigurations.first else {
+            print("Missing player configuration at \(#function)")
+            return
+        }
         do {
-            try playerView.apply(player: viewModel.playerConfiguration, shouldStore: false)
+            try playerView.apply(player: playerConfiguration, shouldStore: false)
         } catch {
             print(error)
         }
@@ -63,7 +67,7 @@ final class PlayerUIKitScreen: UIViewController {
 }
 
 // MARK: Ext Constants
-private extension PlayerUIKitScreen {
+extension PlayerUIKitScreen {
     struct Constants {
         static let aspectRatio: CGFloat = 16.0 / 9.0
         static let insets: UIEdgeInsets = UIEdgeInsets(top: 16.0,
