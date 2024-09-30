@@ -35,7 +35,7 @@ struct PlayerSwiftUIScreen: View {
 }
 
 // MARK: Constants
-private extension PlayerSwiftUIScreen {
+extension PlayerSwiftUIScreen {
     struct Constants {
         static let aspectRatio: CGFloat = 16.0 / 9.0
         static let sidePadding: CGFloat = 16.0

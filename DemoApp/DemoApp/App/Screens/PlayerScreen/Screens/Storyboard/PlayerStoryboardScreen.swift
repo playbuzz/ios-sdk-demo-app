@@ -12,12 +12,8 @@ class PlayerStoryboardScreen: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var playerView: ExcoPlayerView!
     
-    // MARK: - Private properties
-    private let viewModel: any PlayerScreenViewModelProtocol
-    
     // MARK: - Initializers
-    init(viewModel: any PlayerScreenViewModelProtocol) {
-        self.viewModel = viewModel
+    init() {
         super.init(nibName: nil, bundle: nil)
     }
     

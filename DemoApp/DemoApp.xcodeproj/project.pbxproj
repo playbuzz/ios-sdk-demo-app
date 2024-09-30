@@ -28,8 +28,6 @@
 		5D4960F12B16808500D87E3E /* UseCaseSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960F02B16808500D87E3E /* UseCaseSelectionViewController.swift */; };
 		5D4960F42B16808D00D87E3E /* ManualSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960F22B16808D00D87E3E /* ManualSettingsViewController.swift */; };
 		5D4960F52B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960F32B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift */; };
-		5D4960F92B1680A900D87E3E /* LogTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D4960F72B1680A900D87E3E /* LogTableCell.xib */; };
-		5D4960FA2B1680A900D87E3E /* LogTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960F82B1680A900D87E3E /* LogTableCell.swift */; };
 		5D4960FC2B1680AE00D87E3E /* LoggableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4960FB2B1680AE00D87E3E /* LoggableViewController.swift */; };
 		5D4961062B16834D00D87E3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4961052B16834D00D87E3E /* FirebaseAnalytics */; };
 		5D4961082B16834D00D87E3E /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4961072B16834D00D87E3E /* FirebaseCrashlytics */; };
@@ -75,6 +73,26 @@
 		AD04B9B52BB15C64005B6E1F /* ConfigurationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B99A2BB15C64005B6E1F /* ConfigurationFormViewController.swift */; };
 		AD04B9B62BB15C64005B6E1F /* FormFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD04B99B2BB15C64005B6E1F /* FormFieldView.xib */; };
 		AD04B9B92BB15DC3005B6E1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD04B9B82BB15DC3005B6E1F /* Constants.swift */; };
+		ADB939242CAA8AD10055DF08 /* LogTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB9391F2CAA8AD10055DF08 /* LogTableCell.swift */; };
+		ADB939252CAA8AD10055DF08 /* LogTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB939202CAA8AD10055DF08 /* LogTableCell.xib */; };
+		ADB939262CAA8AD10055DF08 /* LoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB939212CAA8AD10055DF08 /* LoggerViewController.swift */; };
+		ADB939272CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB939222CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift */; };
+		ADB939282CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB939232CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib */; };
+		ADB9392A2CAA8BFF0055DF08 /* ExtensionsUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB939292CAA8BFF0055DF08 /* ExtensionsUIButton.swift */; };
+		ADC5F48E2CA9824C00EDDF7C /* ViewContainerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F48C2CA9824C00EDDF7C /* ViewContainerSelectionViewController.swift */; };
+		ADC5F48F2CA9824C00EDDF7C /* ViewContainerSelectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F48D2CA9824C00EDDF7C /* ViewContainerSelectionListViewModel.swift */; };
+		ADC5F4912CA982CC00EDDF7C /* ViewContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4902CA982CC00EDDF7C /* ViewContainerType.swift */; };
+		ADC5F4952CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4942CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift */; };
+		ADC5F4982CA9C7AA00EDDF7C /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4972CA9C7AA00EDDF7C /* ListSection.swift */; };
+		ADC5F49A2CA9C7F900EDDF7C /* ScrollViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4992CA9C7F900EDDF7C /* ScrollViewSection.swift */; };
+		ADC5F49D2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F49C2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift */; };
+		ADC5F49F2CA9C86200EDDF7C /* CellWithPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F49E2CA9C86200EDDF7C /* CellWithPlayerView.swift */; };
+		ADC5F4A32CA9CD6E00EDDF7C /* PlayerUIKitTableViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4A22CA9CD6E00EDDF7C /* PlayerUIKitTableViewScreen.swift */; };
+		ADC5F4A52CA9CF3100EDDF7C /* PlayerUIKitTableViewScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC5F4A42CA9CF3100EDDF7C /* PlayerUIKitTableViewScreen.xib */; };
+		ADC5F4A92CA9D1A300EDDF7C /* PlayerViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4A72CA9D1A300EDDF7C /* PlayerViewTableCell.swift */; };
+		ADC5F4AA2CA9D1A300EDDF7C /* PlayerViewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC5F4A82CA9D1A300EDDF7C /* PlayerViewTableCell.xib */; };
+		ADC5F4AF2CA9DBB200EDDF7C /* DummyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5F4AD2CA9DBB200EDDF7C /* DummyTableCell.swift */; };
+		ADC5F4B02CA9DBB200EDDF7C /* DummyTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADC5F4AE2CA9DBB200EDDF7C /* DummyTableCell.xib */; };
 		ADE045612BB40077005819B0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = ADE045602BB40077005819B0 /* PrivacyInfo.xcprivacy */; };
 		DCC414F10F093406FC7A2B53 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8703E57CA81CE5B63D6960 /* Pods_DemoApp.framework */; };
 /* End PBXBuildFile section */
@@ -123,8 +141,6 @@
 		5D4960F02B16808500D87E3E /* UseCaseSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseSelectionViewController.swift; sourceTree = "<group>"; };
 		5D4960F22B16808D00D87E3E /* ManualSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualSettingsViewController.swift; sourceTree = "<group>"; };
 		5D4960F32B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandaloneExcoPlayerViewController.swift; sourceTree = "<group>"; };
-		5D4960F72B1680A900D87E3E /* LogTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogTableCell.xib; sourceTree = "<group>"; };
-		5D4960F82B1680A900D87E3E /* LogTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTableCell.swift; sourceTree = "<group>"; };
 		5D4960FB2B1680AE00D87E3E /* LoggableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggableViewController.swift; sourceTree = "<group>"; };
 		5D4960FD2B16824300D87E3E /* OMSDK_Exco.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OMSDK_Exco.xcframework; path = ../Embedded/OMSDK_Exco.xcframework; sourceTree = "<group>"; };
 		5D4961012B1682AC00D87E3E /* MobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileSDK.xcframework; path = ../Embedded/MobileSDK.xcframework; sourceTree = "<group>"; };
@@ -171,6 +187,26 @@
 		AD04B99A2BB15C64005B6E1F /* ConfigurationFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationFormViewController.swift; sourceTree = "<group>"; };
 		AD04B99B2BB15C64005B6E1F /* FormFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormFieldView.xib; sourceTree = "<group>"; };
 		AD04B9B82BB15DC3005B6E1F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ADB9391F2CAA8AD10055DF08 /* LogTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTableCell.swift; sourceTree = "<group>"; };
+		ADB939202CAA8AD10055DF08 /* LogTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogTableCell.xib; sourceTree = "<group>"; };
+		ADB939212CAA8AD10055DF08 /* LoggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerViewController.swift; sourceTree = "<group>"; };
+		ADB939222CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticPlayerViewController.swift; sourceTree = "<group>"; };
+		ADB939232CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgrammaticPlayerViewController.xib; sourceTree = "<group>"; };
+		ADB939292CAA8BFF0055DF08 /* ExtensionsUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsUIButton.swift; sourceTree = "<group>"; };
+		ADC5F48C2CA9824C00EDDF7C /* ViewContainerSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerSelectionViewController.swift; sourceTree = "<group>"; };
+		ADC5F48D2CA9824C00EDDF7C /* ViewContainerSelectionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerSelectionListViewModel.swift; sourceTree = "<group>"; };
+		ADC5F4902CA982CC00EDDF7C /* ViewContainerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContainerType.swift; sourceTree = "<group>"; };
+		ADC5F4942CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSwiftUIListScreen.swift; sourceTree = "<group>"; };
+		ADC5F4972CA9C7AA00EDDF7C /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		ADC5F4992CA9C7F900EDDF7C /* ScrollViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewSection.swift; sourceTree = "<group>"; };
+		ADC5F49C2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithTitleAndSubtitleOnly.swift; sourceTree = "<group>"; };
+		ADC5F49E2CA9C86200EDDF7C /* CellWithPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithPlayerView.swift; sourceTree = "<group>"; };
+		ADC5F4A22CA9CD6E00EDDF7C /* PlayerUIKitTableViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerUIKitTableViewScreen.swift; sourceTree = "<group>"; };
+		ADC5F4A42CA9CF3100EDDF7C /* PlayerUIKitTableViewScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerUIKitTableViewScreen.xib; sourceTree = "<group>"; };
+		ADC5F4A72CA9D1A300EDDF7C /* PlayerViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewTableCell.swift; sourceTree = "<group>"; };
+		ADC5F4A82CA9D1A300EDDF7C /* PlayerViewTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewTableCell.xib; sourceTree = "<group>"; };
+		ADC5F4AD2CA9DBB200EDDF7C /* DummyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableCell.swift; sourceTree = "<group>"; };
+		ADC5F4AE2CA9DBB200EDDF7C /* DummyTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyTableCell.xib; sourceTree = "<group>"; };
 		ADE045602BB40077005819B0 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D7A78D8ECD53BDCEFD88B7CD /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -388,6 +424,7 @@
 				AD04B94D2BB1599A005B6E1F /* ExtensionsUIViewController.swift */,
 				AD04B94F2BB1599A005B6E1F /* ExtensionUIRectCorner.swift */,
 				AD04B94E2BB1599A005B6E1F /* UIView+Constraints.swift */,
+				ADB939292CAA8BFF0055DF08 /* ExtensionsUIButton.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -430,7 +467,6 @@
 			isa = PBXGroup;
 			children = (
 				5D4960FB2B1680AE00D87E3E /* LoggableViewController.swift */,
-				5D4960F62B16809C00D87E3E /* LogTableCell */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -442,15 +478,6 @@
 				5D4960F32B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift */,
 			);
 			path = ManualSettings;
-			sourceTree = "<group>";
-		};
-		5D4960F62B16809C00D87E3E /* LogTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				5D4960F82B1680A900D87E3E /* LogTableCell.swift */,
-				5D4960F72B1680A900D87E3E /* LogTableCell.xib */,
-			);
-			path = LogTableCell;
 			sourceTree = "<group>";
 		};
 		AD04B9472BB157D0005B6E1F /* Deprecated */ = {
@@ -563,6 +590,7 @@
 		AD04B9732BB15C64005B6E1F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9391C2CAA8AD10055DF08 /* ProgrammaticPlayer */,
 				AD04B9742BB15C64005B6E1F /* Storyboard */,
 				AD04B9772BB15C64005B6E1F /* Programmatic UIKit */,
 				AD04B97B2BB15C64005B6E1F /* SwiftUI */,
@@ -582,7 +610,8 @@
 		AD04B9772BB15C64005B6E1F /* Programmatic UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				AD04B9782BB15C64005B6E1F /* PlayerUIKitScreen.swift */,
+				ADC5F4A12CA9CD2200EDDF7C /* Reusable */,
+				ADC5F4A02CA9C97B00EDDF7C /* SingleView */,
 				AD04B9792BB15C64005B6E1F /* Views */,
 			);
 			path = "Programmatic UIKit";
@@ -599,7 +628,8 @@
 		AD04B97B2BB15C64005B6E1F /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				AD04B97C2BB15C64005B6E1F /* PlayerSwiftUIScreen.swift */,
+				ADC5F4932CA9A07D00EDDF7C /* Reusable */,
+				ADC5F4922CA9A06800EDDF7C /* SingleView */,
 				AD04B97D2BB15C64005B6E1F /* Views */,
 			);
 			path = SwiftUI;
@@ -627,6 +657,7 @@
 			children = (
 				AD04B9832BB15C64005B6E1F /* OptionListViewController.xib */,
 				AD04B9842BB15C64005B6E1F /* OptionListViewController.swift */,
+				ADC5F48B2CA9821D00EDDF7C /* ViewContainerSelectionScreen */,
 				AD04B9852BB15C64005B6E1F /* Welcome */,
 			);
 			path = OptionListScreen;
@@ -666,6 +697,7 @@
 			isa = PBXGroup;
 			children = (
 				AD04B98D2BB15C64005B6E1F /* ViewCreationType.swift */,
+				ADC5F4902CA982CC00EDDF7C /* ViewContainerType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -700,6 +732,124 @@
 				AD04B9B82BB15DC3005B6E1F /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		ADB9391C2CAA8AD10055DF08 /* ProgrammaticPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9391D2CAA8AD10055DF08 /* LoggerViewController */,
+				ADB939222CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift */,
+				ADB939232CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib */,
+			);
+			path = ProgrammaticPlayer;
+			sourceTree = "<group>";
+		};
+		ADB9391D2CAA8AD10055DF08 /* LoggerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9391E2CAA8AD10055DF08 /* LogTableCell */,
+				ADB939212CAA8AD10055DF08 /* LoggerViewController.swift */,
+			);
+			path = LoggerViewController;
+			sourceTree = "<group>";
+		};
+		ADB9391E2CAA8AD10055DF08 /* LogTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADB9391F2CAA8AD10055DF08 /* LogTableCell.swift */,
+				ADB939202CAA8AD10055DF08 /* LogTableCell.xib */,
+			);
+			path = LogTableCell;
+			sourceTree = "<group>";
+		};
+		ADC5F48B2CA9821D00EDDF7C /* ViewContainerSelectionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F48D2CA9824C00EDDF7C /* ViewContainerSelectionListViewModel.swift */,
+				ADC5F48C2CA9824C00EDDF7C /* ViewContainerSelectionViewController.swift */,
+			);
+			path = ViewContainerSelectionScreen;
+			sourceTree = "<group>";
+		};
+		ADC5F4922CA9A06800EDDF7C /* SingleView */ = {
+			isa = PBXGroup;
+			children = (
+				AD04B97C2BB15C64005B6E1F /* PlayerSwiftUIScreen.swift */,
+			);
+			path = SingleView;
+			sourceTree = "<group>";
+		};
+		ADC5F4932CA9A07D00EDDF7C /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F49B2CA9C82100EDDF7C /* Cells */,
+				ADC5F4962CA9C79600EDDF7C /* Sections */,
+				ADC5F4942CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		ADC5F4962CA9C79600EDDF7C /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F4972CA9C7AA00EDDF7C /* ListSection.swift */,
+				ADC5F4992CA9C7F900EDDF7C /* ScrollViewSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		ADC5F49B2CA9C82100EDDF7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F49E2CA9C86200EDDF7C /* CellWithPlayerView.swift */,
+				ADC5F49C2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ADC5F4A02CA9C97B00EDDF7C /* SingleView */ = {
+			isa = PBXGroup;
+			children = (
+				AD04B9782BB15C64005B6E1F /* PlayerUIKitScreen.swift */,
+			);
+			path = SingleView;
+			sourceTree = "<group>";
+		};
+		ADC5F4A12CA9CD2200EDDF7C /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F4A62CA9D17600EDDF7C /* Cells */,
+				ADC5F4A22CA9CD6E00EDDF7C /* PlayerUIKitTableViewScreen.swift */,
+				ADC5F4A42CA9CF3100EDDF7C /* PlayerUIKitTableViewScreen.xib */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		ADC5F4A62CA9D17600EDDF7C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F4AC2CA9DB8400EDDF7C /* DummyTableCell */,
+				ADC5F4AB2CA9DB6E00EDDF7C /* PlayerViewTableCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ADC5F4AB2CA9DB6E00EDDF7C /* PlayerViewTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F4A72CA9D1A300EDDF7C /* PlayerViewTableCell.swift */,
+				ADC5F4A82CA9D1A300EDDF7C /* PlayerViewTableCell.xib */,
+			);
+			path = PlayerViewTableCell;
+			sourceTree = "<group>";
+		};
+		ADC5F4AC2CA9DB8400EDDF7C /* DummyTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5F4AD2CA9DBB200EDDF7C /* DummyTableCell.swift */,
+				ADC5F4AE2CA9DBB200EDDF7C /* DummyTableCell.xib */,
+			);
+			path = DummyTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -820,15 +970,19 @@
 				AD04B9A42BB15C64005B6E1F /* OptionListViewController.xib in Resources */,
 				5D4960BA2B167A8900D87E3E /* configuration.xcconfig in Resources */,
 				ADE045612BB40077005819B0 /* PrivacyInfo.xcprivacy in Resources */,
-				5D4960F92B1680A900D87E3E /* LogTableCell.xib in Resources */,
+				ADC5F4A52CA9CF3100EDDF7C /* PlayerUIKitTableViewScreen.xib in Resources */,
 				5D4960BB2B167A8900D87E3E /* configurationUnitTests.xcconfig in Resources */,
+				ADC5F4B02CA9DBB200EDDF7C /* DummyTableCell.xib in Resources */,
 				AD04B9B62BB15C64005B6E1F /* FormFieldView.xib in Resources */,
 				AD04B9B32BB15C64005B6E1F /* ConfigurationFormViewController.xib in Resources */,
+				ADC5F4AA2CA9D1A300EDDF7C /* PlayerViewTableCell.xib in Resources */,
 				5D4960D32B167F0200D87E3E /* Main.storyboard in Resources */,
 				5D4960D42B167F0200D87E3E /* LaunchScreen.storyboard in Resources */,
 				AD04B96A2BB15C34005B6E1F /* OptionListTableCell.xib in Resources */,
 				AD04B96B2BB15C34005B6E1F /* SimpleTitleTableCell.xib in Resources */,
+				ADB939282CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib in Resources */,
 				5D4960B92B167A8900D87E3E /* configurationHostApp.xcconfig in Resources */,
+				ADB939252CAA8AD10055DF08 /* LogTableCell.xib in Resources */,
 				5D4960CB2B167ED900D87E3E /* Assets.xcassets in Resources */,
 				AD04B99E2BB15C64005B6E1F /* PlayerStoryboardScreen.xib in Resources */,
 			);
@@ -919,11 +1073,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC5F4A92CA9D1A300EDDF7C /* PlayerViewTableCell.swift in Sources */,
+				ADC5F48E2CA9824C00EDDF7C /* ViewContainerSelectionViewController.swift in Sources */,
 				AD04B9A82BB15C64005B6E1F /* WelcomeOptionListViewController.swift in Sources */,
+				ADB939242CAA8AD10055DF08 /* LogTableCell.swift in Sources */,
+				ADC5F4A32CA9CD6E00EDDF7C /* PlayerUIKitTableViewScreen.swift in Sources */,
 				AD04B9502BB1599A005B6E1F /* ExtensionsUIViewController.swift in Sources */,
 				5D4960F52B16808D00D87E3E /* StandaloneExcoPlayerViewController.swift in Sources */,
 				AD04B9522BB1599A005B6E1F /* ExtensionUIRectCorner.swift in Sources */,
 				AD04B96D2BB15C34005B6E1F /* XibView.swift in Sources */,
+				ADB9392A2CAA8BFF0055DF08 /* ExtensionsUIButton.swift in Sources */,
 				AD04B95E2BB15BCF005B6E1F /* PlayerScreenFactory.swift in Sources */,
 				AD04B9AE2BB15C64005B6E1F /* ShadowView.swift in Sources */,
 				5D4960E32B167F9600D87E3E /* ListDestination.swift in Sources */,
@@ -932,16 +1091,22 @@
 				5D4960D72B167F3100D87E3E /* AppDelegate.swift in Sources */,
 				AD04B99F2BB15C64005B6E1F /* PlayerUIKitScreen.swift in Sources */,
 				AD04B9572BB15A5A005B6E1F /* OptionListCellModel.swift in Sources */,
+				ADC5F49A2CA9C7F900EDDF7C /* ScrollViewSection.swift in Sources */,
+				ADC5F4952CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift in Sources */,
 				AD04B9AF2BB15C64005B6E1F /* CustomTopView.swift in Sources */,
 				5D4960F42B16808D00D87E3E /* ManualSettingsViewController.swift in Sources */,
 				AD04B9AD2BB15C64005B6E1F /* DisclosureImageView.swift in Sources */,
 				AD04B96C2BB15C34005B6E1F /* SimpleTitleTableCell.swift in Sources */,
+				ADC5F49D2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift in Sources */,
+				ADC5F4912CA982CC00EDDF7C /* ViewContainerType.swift in Sources */,
 				AD04B9A02BB15C64005B6E1F /* CustomScrollView.swift in Sources */,
 				AD04B9A32BB15C64005B6E1F /* ListViewController.swift in Sources */,
 				AD04B9512BB1599A005B6E1F /* UIView+Constraints.swift in Sources */,
 				5D4960E92B167FEC00D87E3E /* CrashReporterService.swift in Sources */,
+				ADC5F48F2CA9824C00EDDF7C /* ViewContainerSelectionListViewModel.swift in Sources */,
 				5D4960C22B167E3900D87E3E /* CrashlyticsLogDestination.swift in Sources */,
 				5D4960D82B167F3100D87E3E /* SceneDelegate.swift in Sources */,
+				ADB939262CAA8AD10055DF08 /* LoggerViewController.swift in Sources */,
 				AD04B9AC2BB15C64005B6E1F /* CustomStackView.swift in Sources */,
 				AD04B9B22BB15C64005B6E1F /* ConfigurationFormViewModel.swift in Sources */,
 				AD04B9A12BB15C64005B6E1F /* PlayerSwiftUIScreen.swift in Sources */,
@@ -958,6 +1123,8 @@
 				5D4960E12B167F8E00D87E3E /* ExtensionsUIView.swift in Sources */,
 				AD04B9A72BB15C64005B6E1F /* WelcomeOptionListViewModel.swift in Sources */,
 				AD04B9AA2BB15C64005B6E1F /* ViewCreationType.swift in Sources */,
+				ADC5F4AF2CA9DBB200EDDF7C /* DummyTableCell.swift in Sources */,
+				ADB939272CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift in Sources */,
 				AD04B9B02BB15C64005B6E1F /* CustomLabel.swift in Sources */,
 				AD04B94C2BB15836005B6E1F /* ListViewModelProtocol.swift in Sources */,
 				5D4960DF2B167F8800D87E3E /* ExtensionsBundle.swift in Sources */,
@@ -967,7 +1134,8 @@
 				AD04B95C2BB15BC3005B6E1F /* HostAppAttServiceProvider.swift in Sources */,
 				AD04B9B92BB15DC3005B6E1F /* Constants.swift in Sources */,
 				AD04B9A52BB15C64005B6E1F /* OptionListViewController.swift in Sources */,
-				5D4960FA2B1680A900D87E3E /* LogTableCell.swift in Sources */,
+				ADC5F49F2CA9C86200EDDF7C /* CellWithPlayerView.swift in Sources */,
+				ADC5F4982CA9C7AA00EDDF7C /* ListSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
