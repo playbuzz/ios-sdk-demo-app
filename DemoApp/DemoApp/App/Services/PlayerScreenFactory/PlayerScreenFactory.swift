@@ -36,12 +36,14 @@ private extension PlayerScreenFactory {
     func createScreenOfCertainType(viewModel: any PlayerScreenViewModelProtocol,
                                    type: ViewCreationType) -> UIViewController {
         switch type {
-        case .storyboard:
-            return createPlayerStoryboardScreen()
-        case .uiKit:
-            return createPlayerProgrammaticScreen(viewModel: viewModel)
-        case .swiftUI:
-            return createPlayerSuiScreen(viewModel: viewModel)
+            case .storyboard:
+                return createPlayerStoryboardScreen()
+            case .uiKit:
+                return createPlayerProgrammaticScreen(viewModel: viewModel)
+            case .swiftUI:
+                return createPlayerSuiScreen(viewModel: viewModel)
+            case .programmaticPlayer:
+                return createProgrammaticPlayerScreen()
         }
     }
     
@@ -67,6 +69,10 @@ private extension PlayerScreenFactory {
                 let view = PlayerSwiftUIListScreen(viewModel: viewModel)
                 return UIHostingController(rootView: view)
         }
+    }
+    
+    func createProgrammaticPlayerScreen() -> UIViewController {
+        return ProgrammaticPlayerViewController()
     }
     
     func createPlayerScreenViewModel() -> any PlayerScreenViewModelProtocol {

@@ -37,6 +37,8 @@ final class ViewCreationTypeViewModel: UIMethodSelectionViewModelProtocol {
         switch creationType {
             case .storyboard:
                 navigationAction?(PlayerStoryboardScreen())
+            case .programmaticPlayer:
+                navigationAction?(ProgrammaticPlayerViewController())
             default:
                 let viewModel = ViewContainerSelectionListViewModel(selectedCreationType: creationType)
                 let containerSelectionViewController = ViewContainerSelectionViewController(viewModel: viewModel)
