@@ -34,9 +34,14 @@ final class ViewCreationTypeViewModel: UIMethodSelectionViewModelProtocol {
     }
     
     private func navigateToNextScreen(creationType: ViewCreationType) {
-        let viewModel = WelcomeOptionListViewModel(selectedCreationType: creationType)
-        let welcomeViewController = WelcomeOptionListViewController(viewModel: viewModel)
-        navigationAction?(welcomeViewController)
+        switch creationType {
+            case .storyboard:
+                navigationAction?(PlayerStoryboardScreen())
+            default:
+                let viewModel = ViewContainerSelectionListViewModel(selectedCreationType: creationType)
+                let containerSelectionViewController = ViewContainerSelectionViewController(viewModel: viewModel)
+                navigationAction?(containerSelectionViewController)
+        }
     }
 }
 

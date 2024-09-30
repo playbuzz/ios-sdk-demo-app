@@ -15,11 +15,13 @@ protocol PlayerScreenFactoryProtocol {
 
 final class PlayerScreenFactory: PlayerScreenFactoryProtocol {
     private let viewCreationType: ViewCreationType
+    private let containerType: ViewContainerType
     private let configuration: ExcoPlayerConfiguration
     
     // MARK: Init
-    init(viewCreationType: ViewCreationType, configuration: ExcoPlayerConfiguration) {
+    init(viewCreationType: ViewCreationType, containerType: ViewContainerType, configuration: ExcoPlayerConfiguration) {
         self.viewCreationType = viewCreationType
+        self.containerType = containerType
         self.configuration = configuration
     }
     
@@ -35,7 +37,7 @@ private extension PlayerScreenFactory {
                                    type: ViewCreationType) -> UIViewController {
         switch type {
         case .storyboard:
-            return createPlayerStoryboardScreen(viewModel: viewModel)
+            return createPlayerStoryboardScreen()
         case .uiKit:
             return createPlayerProgrammaticScreen(viewModel: viewModel)
         case .swiftUI:
@@ -43,17 +45,28 @@ private extension PlayerScreenFactory {
         }
     }
     
-    func createPlayerStoryboardScreen(viewModel: any PlayerScreenViewModelProtocol) -> UIViewController {
-        return PlayerStoryboardScreen(viewModel: viewModel)
+    func createPlayerStoryboardScreen() -> UIViewController {
+        return PlayerStoryboardScreen()
     }
     
     func createPlayerProgrammaticScreen(viewModel: any PlayerScreenViewModelProtocol) -> UIViewController {
-        return PlayerUIKitScreen(viewModel: viewModel)
+        switch containerType {
+            case .singleView:
+                return PlayerUIKitScreen(viewModel: viewModel)
+            case .reusable:
+                return PlayerUIKitTableViewScreen(viewModel: viewModel)
+        }
     }
     
     func createPlayerSuiScreen(viewModel: any PlayerScreenViewModelProtocol) -> UIViewController {
-        let view = PlayerSwiftUIScreen(viewModel: viewModel)
-        return UIHostingController(rootView: view)
+        switch containerType {
+            case .singleView:
+                let view = PlayerSwiftUIScreen(viewModel: viewModel)
+                return UIHostingController(rootView: view)
+            case .reusable:
+                let view = PlayerSwiftUIListScreen(viewModel: viewModel)
+                return UIHostingController(rootView: view)
+        }
     }
     
     func createPlayerScreenViewModel() -> any PlayerScreenViewModelProtocol {
