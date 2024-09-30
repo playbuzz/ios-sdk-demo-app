@@ -39,7 +39,6 @@ extension AppDelegate: UIApplicationDelegate {
         // Override point for customization after application launch.
         ExcoMobileSDK.delegate = self
         ExcoMobileSDK.activate()
-        ExcoMobileSDK.prefetchSDKJSFiles()
         
         /// disabling the screen idle timer in order to support long debug sessions
         UIApplication.shared.isIdleTimerDisabled = true

@@ -1,5 +1,4 @@
-source 'https://cdn.cocoapods.org/'
-
+#source 'https://exco1.jfrog.io/artifactory/api/pods/ios-releases-cocoapods-local'
 install! 'cocoapods' ,
 :warn_for_unused_master_specs_repo  => false;
 
@@ -8,7 +7,6 @@ workspace 'ExCoSDK-Integration.xcworkspace'
 project 'DemoApp/DemoApp.xcodeproj'
 
 platform :ios, '13.0'
-source 'https://exco1.jfrog.io/artifactory/api/pods/ios-releases-cocoapods-local'
 
 target 'DemoApp' do
   project 'DemoApp/DemoApp.xcodeproj'
@@ -18,6 +16,7 @@ target 'DemoApp' do
   
   # Pods for HostApp
   pod 'XCGLogger'
+
   pod 'ExcoMobileSDK'
   pod 'OMSDK_Exco', '~> 1.4.8'
   

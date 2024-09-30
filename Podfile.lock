@@ -1,12 +1,12 @@
 PODS:
-  - ExcoMobileSDK (1.0.13)
-  - ObjcExceptionBridging (1.0.1):
-    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
-  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ExcoMobileSDK (1.1.9)
+  - ObjcExceptionBridging (7.1.5):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 7.1.5)
+  - ObjcExceptionBridging/ObjcExceptionBridging (7.1.5)
   - OMSDK_Exco (1.4.8)
-  - XCGLogger (7.0.1):
-    - XCGLogger/Core (= 7.0.1)
-  - XCGLogger/Core (7.0.1):
+  - XCGLogger (7.1.5):
+    - XCGLogger/Core (= 7.1.5)
+  - XCGLogger/Core (7.1.5):
     - ObjcExceptionBridging
 
 DEPENDENCIES:
@@ -22,11 +22,11 @@ SPEC REPOS:
     - XCGLogger
 
 SPEC CHECKSUMS:
-  ExcoMobileSDK: 3c006c7796d5a5e6e0a9fa1e556cd0596b2e5fe4
-  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ExcoMobileSDK: ec0c0ce612225d350c32c01e8c8f04a42664bb47
+  ObjcExceptionBridging: d3d37d62981bb7f252ecb31b62d7e23a96bbfb8a
   OMSDK_Exco: 14274bb1b8a06b2421f733bfc8ebfefa2d76a0a0
-  XCGLogger: 1943831ef907df55108b0b18657953f868de973b
+  XCGLogger: 399c5885210b4e2ad79d9f7a29b105d672ef724f
 
-PODFILE CHECKSUM: d897f010c6b08c58aed3e9ac3ab499a757f34d5d
+PODFILE CHECKSUM: 2f0947feba3af32e287da5b37a045252029335f8
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2

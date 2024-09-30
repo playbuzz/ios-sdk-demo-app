@@ -1,6 +1,6 @@
 //
 //  LogTableCell.swift
-//  DemoApp
+//  HostApp
 //
 //  Created by Eli Mehaudy on 26/11/2023.
 //
@@ -13,5 +13,9 @@ class LogTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func configure(with text: String) {
+        logLabel.text = text
     }
 }

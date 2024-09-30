@@ -11,15 +11,18 @@ enum ViewCreationType: String, CaseIterable {
     case storyboard = "Storyboard"
     case uiKit = "UIKit"
     case swiftUI = "SwiftUI"
+    case programmaticPlayer = "Programmatic Player"
     
     var description: String {
         switch self {
-        case .storyboard:
-            return "The screen will be created from interface builder"
-        case .uiKit:
-            return "The screen will be created with UIKit"
-        case .swiftUI:
-            return "The screen will be created with SwiftUI"
+            case .storyboard:
+                return "The screen will be created from interface builder"
+            case .uiKit:
+                return "The screen will be created with UIKit"
+            case .swiftUI:
+                return "The screen will be created with SwiftUI"
+            case .programmaticPlayer:
+                return "Exco player with programmatic controls"
         }
     }
 }
