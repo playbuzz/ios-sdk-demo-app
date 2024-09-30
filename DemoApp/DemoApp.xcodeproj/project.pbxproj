@@ -786,7 +786,6 @@
 				ADC5F49B2CA9C82100EDDF7C /* Cells */,
 				ADC5F4962CA9C79600EDDF7C /* Sections */,
 				ADC5F4942CA9A0C400EDDF7C /* PlayerSwiftUIListScreen.swift */,
-				ADC5F49E2CA9C86200EDDF7C /* CellWithPlayerView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -803,6 +802,7 @@
 		ADC5F49B2CA9C82100EDDF7C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				ADC5F49E2CA9C86200EDDF7C /* CellWithPlayerView.swift */,
 				ADC5F49C2CA9C83100EDDF7C /* CellWithTitleAndSubtitleOnly.swift */,
 			);
 			path = Cells;
