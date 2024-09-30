@@ -573,7 +573,6 @@
 		AD04B9702BB15C64005B6E1F /* PlayerScreen */ = {
 			isa = PBXGroup;
 			children = (
-				ADB9391C2CAA8AD10055DF08 /* ProgrammaticPlayer */,
 				AD04B9712BB15C64005B6E1F /* ViewModel */,
 				AD04B9732BB15C64005B6E1F /* Screens */,
 			);
@@ -591,6 +590,7 @@
 		AD04B9732BB15C64005B6E1F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				ADB9391C2CAA8AD10055DF08 /* ProgrammaticPlayer */,
 				AD04B9742BB15C64005B6E1F /* Storyboard */,
 				AD04B9772BB15C64005B6E1F /* Programmatic UIKit */,
 				AD04B97B2BB15C64005B6E1F /* SwiftUI */,
@@ -741,8 +741,7 @@
 				ADB939222CAA8AD10055DF08 /* ProgrammaticPlayerViewController.swift */,
 				ADB939232CAA8AD10055DF08 /* ProgrammaticPlayerViewController.xib */,
 			);
-			name = ProgrammaticPlayer;
-			path = Screens/ProgrammaticPlayer;
+			path = ProgrammaticPlayer;
 			sourceTree = "<group>";
 		};
 		ADB9391D2CAA8AD10055DF08 /* LoggerViewController */ = {

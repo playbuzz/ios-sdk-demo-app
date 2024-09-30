@@ -40,7 +40,7 @@ class PlayerUIKitTableViewScreen: UIViewController {
 
 extension PlayerUIKitTableViewScreen: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if /*indexPath.row == 3 || */indexPath.row == 1 {
+        if indexPath.row == 3 {
             return handleCellWithPlayer(tableView: tableView, indexPath: indexPath)
         }
         return handleDummyCell(tableView: tableView, indexPath: indexPath)
