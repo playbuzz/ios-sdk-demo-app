@@ -67,7 +67,7 @@ This SDK provides functionality for integrating the Ex.co Player into iOS applic
 
 ## Requirements
 
-- iOS 13.0+
+- iOS 14.0+
 - XCode 14.3+
 - Swift 5.0+
 - Cocoapods 1.1.1+
@@ -76,8 +76,7 @@ This SDK provides functionality for integrating the Ex.co Player into iOS applic
 
 - **Add the following lines to your `Podfile`**:
 ```ruby
-source 'https://exco1.jfrog.io/artifactory/api/pods/ios-releases-cocoapods-local'
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 target '<your_app_target_name>' do
 use_frameworks!

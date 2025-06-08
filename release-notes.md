@@ -1,5 +1,10 @@
 # Release Notes for ExcoMobileSDK(iOS)
 
+## Version 1.1.14 - 5/6/2025
+### Bug Fixes
+- **Player adjustment on exit fullscreen bugfix**
+- **Zoom on player disabled**
+
 ## Version 1.1.9 - 30/9/2024
 ### Features
 - **Reusable Player screens added**
