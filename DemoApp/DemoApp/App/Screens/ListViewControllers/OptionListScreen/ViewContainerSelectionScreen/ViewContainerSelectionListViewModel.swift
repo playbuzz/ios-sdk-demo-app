@@ -53,7 +53,7 @@ private extension ViewContainerSelectionListViewModel {
     
     func getPredefinedConfiguration() -> ExcoPlayerConfiguration {
         let attService = HostAppAttServiceProvider()
-        let configurationBuilder = ExcoMobileSDK.builder(with: Constants.PlayerIdConstants.playerIdWithAds)
+        let configurationBuilder = ExcoMobileSDK.builder(with: Constants.PlayerIdConstants.playerIdWithoutAds)
         // TODO: - Complete predefined attributes
             .set(applicationName: Bundle.main.appName)
             .set(applicationBundle: Bundle.main.bundleIdentifier)

@@ -6,7 +6,7 @@ workspace 'ExCoSDK-Integration.xcworkspace'
 
 project 'DemoApp/DemoApp.xcodeproj'
 
-platform :ios, '13.0'
+platform :ios, '14.0'
 
 target 'DemoApp' do
   project 'DemoApp/DemoApp.xcodeproj'

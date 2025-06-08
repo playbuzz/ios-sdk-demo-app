@@ -46,7 +46,7 @@ extension PlayerSwiftUIScreen {
 }
 
 #Preview {
-    let config = ExcoMobileSDK.builder(with: Constants.PlayerIdConstants.playerIdWithAds).build()
+    let config = ExcoMobileSDK.builder(with: Constants.PlayerIdConstants.playerIdWithoutAds).build()
     return PlayerSwiftUIScreen(
         viewModel: PlayerScreenViewModel(
             configuration: config)

@@ -30,7 +30,7 @@ class ConfigurationFormViewModel {
     }
     
     var navigationAction: ((UIViewController) -> ())?
-    var initialPlayerID = Constants.PlayerIdConstants.playerIdWithAds
+    var initialPlayerID = Constants.PlayerIdConstants.playerIdWithoutAds
     
     private let selectedCreationType: ViewCreationType
     private let selectedContainerType: ViewContainerType
